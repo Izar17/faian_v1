@@ -1,0 +1,96 @@
+#invoice-POS {
+  width: 44mm;
+  background: #fff;
+  font-family: Helvetica Neue;
+
+  ::selection {
+    background: #f31544;
+    color: #fff;
+  }
+  ::moz-selection {
+    background: #f31544;
+    color: #fff;
+  }
+  h1 {
+    font-size: 1.5em;
+    color: #000;
+    font-family: Helvetica;
+  }
+  h2 {
+    font-size: 1.0em;
+    color: #000;
+    font-family: Helvetica;
+  }
+  h3 {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2em;
+    color: #000;
+    font-family: Helvetica;
+  }
+  p {
+    font-size: 0.7em;
+    color: #000;
+    font-family: Helvetica;
+    line-height: 1.2em;
+  }
+
+  #top,
+  #mid,
+  #bot {
+    /* Targets all id with 'col-' */
+    border-bottom: 1px solid #eee;
+  }
+
+  #top {
+    min-height: 100px;
+  }
+  #mid {
+    min-height: 80px;
+  }
+  #bot {
+    min-height: 50px;
+  }
+
+  .info {
+    display: block;
+  }
+  .title {
+    float: right;
+  }
+  .title p {
+    text-align: right;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    //padding: 5px 0 5px 15px;
+    //border: 1px solid #EEE
+  }
+  .tabletitle {
+    //padding: 5px;
+    font-size: 0.7em;
+    background: #eee;
+  }
+  .service {
+    border-bottom: 1px solid #eee;
+  }
+  .item {
+    width: 24mm;
+  }
+  .itemtext {
+    font-size: 0.63em;
+  }
+  .itemprice {
+    font-size: 0.63em;
+    text-align: right;
+    color: #000;
+    font-family: Helvetica;
+  }
+
+  #legalcopy {
+    margin-top: 5mm;
+  }
+}
