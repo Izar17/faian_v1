@@ -1,6 +1,10 @@
 <?php 
 require_once 'includes/header.php'; 
 $contId = $_GET['cont'];
+if($contId == 1) { $contLabel = "Layaway";}
+else if($contId == 2) { $contLabel = "Reservation";}
+else if($contId == 3) { $contLabel = "For Pickup";}
+else { $contLabel = "For Delivery";}
 ?>
 
 
@@ -9,12 +13,12 @@ $contId = $_GET['cont'];
 
 		<ol class="breadcrumb">
 		  <li><a href="dashboard.php">Home</a></li>		  
-		  <li class="active">Layaway</li>
+		  <li class="active"><?php echo $contLabel;?></li>
 		</ol>
 
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Manage Layaway</div>
+				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Manage <?php echo $contLabel;?></div>
 			</div> <!-- /panel-heading -->
 			<div class="panel-body">
 				<div class="remove-messages"></div>

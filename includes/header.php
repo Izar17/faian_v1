@@ -96,7 +96,8 @@ $actRevCc = 0;?>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="glyphicon glyphicon-list-alt"></i> Inventory <span class="caret"></span></a>        
           <ul class="dropdown-menu">  
               <li id="navManageInventory"><a href="inventory.php"><i class="glyphicon glyphicon-list-alt"></i> Manage Inventory</a></li>
-              <li id="navInventoryReport"><a href="reportInventory.php"> <i class="glyphicon glyphicon-check"></i> Report </a></li>        
+              <li id="navInventoryReport"><a href="reportInventory.php"> <i class="glyphicon glyphicon-check"></i> Inventory Report </a></li> 
+              <li id="navAllReport"><a href="reportAllTransaction.php"> <i class="glyphicon glyphicon-check"></i> All Transaction Reports </a></li>        
             </ul>
           </li>   
       <?php } else {?> 

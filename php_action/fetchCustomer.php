@@ -2,7 +2,7 @@
 
 require_once 'core.php';
 
-$sql = "SELECT id, name, address, contact_number, status FROM customer where status != 0";
+$sql = "SELECT id, name, address, contact_number, status FROM customer where status != 0 order by name asc";
 $result = $connect->query($sql);
 
 $output = array('data' => array());
